@@ -146,7 +146,11 @@ $(".btn").click(function (event) {
 
 
 
-
+$("#startButton").click(function (event) {
+  setTimeout(function () {
+    game();
+  }, 500);
+});
 
 
 $(document).keypress(function(event) {
