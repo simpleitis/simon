@@ -28,7 +28,7 @@ function matching() {
       count = 0;
       num = [];
       pnum = [];
-      $("h1").text("Game over, press any key to restart");
+      $("h1").text("Restart");
       setTimeout(function () {
         document.dispatchEvent(new KeyboardEvent("keypress", { key: "a" }));
       }, 10000);
@@ -117,7 +117,7 @@ $(".btn").click(function (event) {
     count = 0;
     num = [];
     pnum = [];
-    $("h1").text("Game over, press any key to restart");
+    $("h1").text("Restart");
     var audio = new Audio(".sounds/wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
